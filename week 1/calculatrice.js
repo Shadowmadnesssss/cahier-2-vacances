@@ -46,6 +46,10 @@ function calculatrice() {
                 }
                 else if (operation === "/") {
                     resultat = nombre1 / nombre2;
+                    if (nombre2 === 0) {
+                        console.log("division par 0 impossible");
+                        return calculatrice();
+                    }
                 }
                 else { 
                     resultat = "operation invalide";
